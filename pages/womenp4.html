@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+
+
+     .navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+  }
+
+    .carousel-inner{
+    text-align: center;
+  }
+
+  .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.picmix {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.piclo {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*Title of the product*/
+.title{
+    text-align: center;
+}
+
+.para{
+    padding-right: 10%;
+}
+
+* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+  	background: #f9f9f9;
+		color: #666;
+		font: 11px/14px Arial, Helvetica, sans-serif;
+	} 
+
+	.color-wrapper {
+		position: relative;
+		width: 250px;
+		margin: 20px auto;
+	}
+
+	.color-wrapper p {
+		margin-bottom: 5px;
+	}
+
+	input.call-picker {
+		border: 1px solid #AAA;
+		color: #666;
+		text-transform: uppercase;
+		float: left;    
+		outline: none;
+	  padding: 10px;
+	  text-transform: uppercase;
+	  width: 85px;
+	}
+
+	.color-picker {
+		width: 130px;
+		background: #F3F3F3;
+		height: 81px;
+		padding: 5px;
+		border: 5px solid #fff;
+		box-shadow: 0px 0px 3px 1px #DDD;
+		position: absolute;
+		top: 61px;
+		left: 2px;
+	}
+
+	.color-holder {
+  	background: #fff;
+		cursor: pointer;
+		border: 1px solid #AAA;
+		width: 40px;
+		height: 36px;
+		float: left;
+		margin-left: 5px;
+	}
+
+	.color-picker .color-item {
+		cursor: pointer;
+		width: 10px;
+		height: 10px;
+		list-style-type: none;
+		float: left;
+		margin: 2px;
+		border: 1px solid #DDD;
+	}
+
+	.color-picker .color-item:hover {
+		border: 1px solid #666;
+		opacity: 0.8;
+		-moz-opacity: 0.8;
+		filter:alpha(opacity=8);
+	}
+
+    body {
+  margin: 2rempx 0px;
+    }
+
+  h6 {
+    margin-top: 2rem;  
+  
+}
+</style>
+
+<body>
+    <!--navbar-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><img src="../images/nike.png" alt="nikelogo" width="50" height="30"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/women.html">Women</a></li>
+          <li><a href="../pages/men.html">Men</a></li>
+          <li><a href="../pages/kids.html">Kids</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav></br>
+  <!--End of navbar-->
+
+  <!--banner slide with statements-->
+<div class="container">  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <h4 class="slide">Free Returns. Return whatever you don't love within 30 days.</h4>
+        </div>
+  
+        <div class="item">
+         <h4 class="slide">Our latest and greatest in your inbox.</h4>
+        </div>
+      
+        <div class="item">
+          <h4 class="slide">Safe and Secure Shopping. Free Shipping</h4>
+        </div>
+      </div>
+  </div>
+
+  <div class="title">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+  </div>
+  
+  <div class="row">
+    <div class="column"><img class="picmix" src="../images/ww4.webp" alt=""><h3>R1799.99</h3><a href=""><button type="button" class="btn btn-info">Add to Cart</button></a></div>
+    <div class="column"><img class="piclo" src="../images/nike.png" alt=""><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, alias non earum modi assumenda, temporibus et sint dolores eaque aspernatur qui aperiam ratione officiis soluta veritatis deserunt neque. Ab, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia amet blanditiis rem! Voluptatibus laboriosam vitae blanditiis quidem saepe. Exercitationem hic pariatur quisquam, tenetur expedita voluptatem iusto! Eligendi ipsum beatae enim.</p>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-4">
+                  <h6>Small</h6>        
+                  <select class="custom-select custom-select-sm" id="gender2">
+                    <option selected>Choose...</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>  
+                  
+                  <h6>Medium</h6>        
+                  <select class="custom-select" id="gender2">
+                    <option selected>Choose...</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>  
+                  
+                  <h6>Large</h6>        
+                  <select class="custom-select custom-select-lg" id="gender2">
+                    <option selected>Choose...</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>  
+                </div>
+            </div>
+            
+          </div>
+
+    </div>
+  </div>
+  <!-- Easy and useful color picker -->
+<div class="color-wrapper">
+    <p>Choose color (# hex)</p>
+    <input type="text" name="custom_color" placeholder="#FFFFFF" id="pickcolor" class="call-picker">
+    <div class="color-holder call-picker"></div>
+    <div class="color-picker" id="color-picker" style="display: none"></div>
+  </div>
+</br></br>
+
+
+</br>
+
+
+  
+  
+<!--Javascript, color picker-->
+<script>		
+  
+  var colorList = [ '000000', '993300', '333300', '003300', '003366', '000066', '333399', '333333', 
+    '660000', 'FF6633', '666633', '336633', '336666', '0066FF', '666699', '666666', 'CC3333', 'FF9933', '99CC33', '669966', '66CCCC', '3366FF', '663366', '999999', 'CC66FF', 'FFCC33', 'FFFF66', '99FF66', '99CCCC', '66CCFF', '993366', 'CCCCCC', 'FF99CC', 'FFCC99', 'FFFF99', 'CCffCC', 'CCFFff', '99CCFF', 'CC99FF', 'FFFFFF' ];
+            
+            var picker = $('#color-picker');
+    
+            for (var i = 0; i < colorList.length; i++ ) {
+                picker.append('<li class="color-item" data-hex="' + '#' + colorList[i] + '" style="background-color:' + '#' + colorList[i] + ';"></li>');
+            }
+    
+            $('body').click(function () {
+                picker.fadeOut();
+            });
+    
+            $('.call-picker').click(function(event) {
+                event.stopPropagation();
+                picker.fadeIn();
+                picker.children('li').hover(function() {
+                    var codeHex = $(this).data('hex');
+    
+                    $('.color-holder').css('background-color', codeHex);
+                    $('#pickcolor').val(codeHex);
+                });
+            });
+</script>
+    
+</body>
+</html>
